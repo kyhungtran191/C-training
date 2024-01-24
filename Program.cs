@@ -13,14 +13,32 @@ namespace Review
             bool b = true || false;
             const char p = '1';
             int[] n = { 1, 2, 3, 4 };
-            foreach(int temp in n)
+            foreach (int temp in n)
             {
                 Console.WriteLine(temp);
             }
+            //Generic
+            static T Swap<T>(T a, T b)
+            {
+                if (a != null && b != null)
+                {
+                    return a;
+                }
+                return b;
+            }
             LearnNamspace.XinChao();
-            // Generic
-            // Delegate 
+            //Anonymous
+            //new {name : "1123"}
+            //Delegate 
             //Lambda
+            //LinQ
+            int? age;
+            age = null;
+            if (age.HasValue)
+            {
+                Console.WriteLine("Yes");
+            }
+            //Virtual method, abstract class
         }
     }
 }
