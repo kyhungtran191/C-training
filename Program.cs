@@ -1,8 +1,13 @@
 ﻿using MyNameSpace;
 namespace Review
 {
+    public delegate void ShowLog(string message);
     internal class Program
     {
+        static void Info(string s)
+        {
+            Console.WriteLine("1");
+        } 
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
@@ -39,6 +44,9 @@ namespace Review
                 Console.WriteLine("Yes");
             }
             //Virtual method, abstract class
+            ShowLog info = Info;
+            //Action, Func :delegate
+            info("123");
         }
     }
 }
