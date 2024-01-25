@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyNameSpace
 {
-    internal class LearnNamspace
+    public class LearnNamspace
     {
         public static void XinChao()
         {
